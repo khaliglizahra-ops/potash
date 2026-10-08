@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-3 py-7 text-[12.5px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Potash. Tüm hakları saklıdır. Fiyatlara KDV dahil değildir.</p>
+          <p>© {new Date().getFullYear()} Nükleon Lab. Tüm hakları saklıdır. Fiyatlara KDV dahil değildir.</p>
           <p className="font-mono uppercase tracking-[0.16em]">Yerli Üretim · Ankara</p>
         </div>
       </div>

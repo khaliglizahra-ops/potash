@@ -1,4 +1,4 @@
-# Potash — B2B e-commerce
+# Nükleon Lab — B2B e-commerce
 
 Next.js 16 (App Router) · React Three Fiber · Motion · Tailwind 4 · SQLite (`node:sqlite`, no native add-ons).
 Requires **Node ≥ 22.13**.

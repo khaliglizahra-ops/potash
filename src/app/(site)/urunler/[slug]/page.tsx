@@ -72,7 +72,7 @@ export default async function ProductPage({ params }: Props) {
       )}
 
       <StickyCta card={card} />
-      <JsonLd data={productLd(p, brand?.name ?? "Potash", cat?.name ?? "")} />
+      <JsonLd data={productLd(p, brand?.name ?? "Nükleon Lab", cat?.name ?? "")} />
     </>
   );
 }

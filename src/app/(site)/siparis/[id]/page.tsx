@@ -41,7 +41,7 @@ export default async function OrderPage({ params, searchParams }: { params: Prom
             <p className="mt-2 text-[15px] leading-relaxed text-body">
               Lütfen <b className="text-ink">{formatTRY(o.total)}</b> tutarını açıklama kısmına <b className="font-mono text-ink">{o.number}</b> yazarak gönderin. Ödeme ulaştığında siparişiniz hazırlanmaya başlar.
             </p>
-            <p className="mt-3 font-mono text-[14px] text-ink">{iban ? `${process.env.BANK_NAME ?? "Potash"} · ${iban}` : "Banka hesap bilgileri satış ekibimiz tarafından e-posta ile iletilecektir."}</p>
+            <p className="mt-3 font-mono text-[14px] text-ink">{iban ? `${process.env.BANK_NAME ?? "Nükleon Lab"} · ${iban}` : "Banka hesap bilgileri satış ekibimiz tarafından e-posta ile iletilecektir."}</p>
           </div>
         )}
 

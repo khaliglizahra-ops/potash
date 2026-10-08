@@ -71,7 +71,7 @@ export default function ProductTabs({ product }: { product: Product }) {
                 <div>
                   <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{product.name}</h2>
                   <p className="mt-5 text-[17px] leading-[1.75] text-body">{product.description}</p>
-                  <p className="mt-4 text-[17px] leading-[1.75] text-body">Cihaz Ankara’daki tesisimizde üretilir; kurulum, devreye alma ve kullanıcı eğitimi Potash mühendislerince yapılır. Özel ölçü veya farklı kontrol ihtiyacınız varsa teklif formunda belirtmeniz yeterlidir.</p>
+                  <p className="mt-4 text-[17px] leading-[1.75] text-body">Cihaz Ankara’daki tesisimizde üretilir; kurulum, devreye alma ve kullanıcı eğitimi Nükleon mühendislerince yapılır. Özel ölçü veya farklı kontrol ihtiyacınız varsa teklif formunda belirtmeniz yeterlidir.</p>
                 </div>
                 <div className="rounded-[18px] bg-gray-50 p-7">
                   <h3 className="eyebrow">Öne çıkanlar</h3>

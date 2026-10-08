@@ -31,7 +31,7 @@ export default async function ArticlePage({ params }: Props) {
         <Link href={`/bilgi-merkezi?kategori=${a.category}`} className="eyebrow hover:underline">{cat?.name}</Link>
         <h1 className="mt-4 text-[clamp(30px,4.4vw,54px)] font-semibold leading-[1.06] tracking-[-0.03em]">{a.title}</h1>
         <p className="mt-5 text-[19px] leading-relaxed text-body">{a.excerpt}</p>
-        <p className="mt-6 border-y border-line py-4 font-mono text-[12px] text-body">{formatDate(a.publishedAt)} · {a.readingMinutes} dk okuma · Potash Teknik Ekip</p>
+        <p className="mt-6 border-y border-line py-4 font-mono text-[12px] text-body">{formatDate(a.publishedAt)} · {a.readingMinutes} dk okuma · Nükleon Teknik Ekip</p>
         <div className="mt-10">
           {a.body.map((t, i) =>
             t.startsWith("## ") ? (
@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: Props) {
         <h2 className="text-2xl font-semibold tracking-tight">Diğer yazılar</h2>
         <ul className="mt-6 grid gap-4 md:grid-cols-3">{others.map((o) => <li key={o.id}><Link href={`/bilgi-merkezi/${o.slug}`} className="card block p-6 hover:border-red"><span className="eyebrow">{ARTICLE_CATEGORIES.find((c) => c.slug === o.category)?.name}</span><span className="mt-3 block text-lg font-semibold leading-snug text-ink">{o.title}</span></Link></li>)}</ul>
       </section>
-      <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt, datePublished: a.publishedAt, image: a.image ? `${SITE}${a.image}` : undefined, author: { "@type": "Organization", name: "Potash" }, publisher: { "@type": "Organization", name: "Potash" }, mainEntityOfPage: `${SITE}/bilgi-merkezi/${a.slug}` }} />
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt, datePublished: a.publishedAt, image: a.image ? `${SITE}${a.image}` : undefined, author: { "@type": "Organization", name: "Nükleon Lab" }, publisher: { "@type": "Organization", name: "Nükleon Lab" }, mainEntityOfPage: `${SITE}/bilgi-merkezi/${a.slug}` }} />
     </div>
   );
 }

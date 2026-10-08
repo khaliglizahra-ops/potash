@@ -244,7 +244,7 @@ export default function SearchOverlay() {
                 <span className="inline-flex items-center gap-1"><CornerDownLeft size={11} /> aç</span>
                 <span><kbd className="rounded border border-gray-300 px-1.5">esc</kbd> kapat</span>
               </span>
-              <span>Potash arama</span>
+              <span>Nükleon Lab arama</span>
             </div>
           </motion.div>
         </motion.div>

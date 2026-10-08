@@ -1,21 +1,14 @@
-/** Potash wordmark: a red crystal cube + "Potash". Pure markup, works in server and client components. */
-export function LogoMark({ className = "h-7 w-7" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      <polygon points="16,1.5 29,9 29,23 16,30.5 3,23 3,9" fill="#c8102e" />
-      <polygon points="16,1.5 29,9 16,16.5 3,9" fill="#e31b3b" />
-      <path d="M16 16.5V30.5M16 16.5L3 9M16 16.5L29 9" stroke="#fff" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
-    </svg>
-  );
-}
+import Image from "next/image";
 
+/** Nükleon wordmark (the client's own logo file) + "LAB". On dark backgrounds it sits on a white chip. */
 export function LogoWordmark({ tone = "dark", size = "md" }: { tone?: "dark" | "light"; size?: "sm" | "md" | "lg" }) {
-  const box = size === "lg" ? "h-9 w-9" : size === "sm" ? "h-6 w-6" : "h-7 w-7";
-  const text = size === "lg" ? "text-[28px]" : size === "sm" ? "text-[19px]" : "text-[23px]";
+  const h = size === "lg" ? "h-7" : size === "sm" ? "h-5" : "h-6 sm:h-7";
+  const logo = <Image src="/img/site/nukleon-logo.jpg" alt="Nükleon" width={1621} height={314} priority={size === "md"} className={`${h} w-auto max-w-none`} />;
+  if (tone === "light") return <span className="inline-block rounded-lg bg-white px-3.5 py-2.5">{logo}</span>;
   return (
     <span className="inline-flex items-center gap-2.5">
-      <LogoMark className={`${box} shrink-0`} />
-      <span className={`${text} font-semibold leading-none tracking-[-0.04em] ${tone === "light" ? "text-white" : "text-ink"}`}>Potash</span>
+      {logo}
+      <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.28em] text-ink max-[400px]:hidden">Lab</span>
     </span>
   );
 }

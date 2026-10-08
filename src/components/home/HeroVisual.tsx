@@ -48,7 +48,7 @@ export default function HeroVisual() {
       <motion.div style={{ rotateY: rotY, rotateX: rotX, x: devX, transformPerspective: 1400 }} initial={{ opacity: 0, y: 30, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }} className="packshot absolute inset-0">
         <Image
           src="/img/products/Inkubator--NIN--resim-230.jpg"
-          alt="Potash NIN-110 laboratuvar tipi inkübatör"
+          alt="Nükleon NIN-110 laboratuvar tipi inkübatör"
           fill
           priority
           sizes="(min-width:1024px) 540px, 90vw"

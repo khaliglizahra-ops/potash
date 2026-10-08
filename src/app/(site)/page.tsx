@@ -155,7 +155,7 @@ export default function HomePage() {
       {/* ---------------------------------------------------------- WHY */}
       <section className="container-x pt-24 sm:pt-32">
         <Reveal>
-          <SectionHead eyebrow="Fark" title="Neden Potash?" intro="Üreticisiyiz. Cihazı tasarlayan, üreten ve servis eden aynı ekip." />
+          <SectionHead eyebrow="Fark" title="Neden Nükleon Lab?" intro="Üreticisiyiz. Cihazı tasarlayan, üreten ve servis eden aynı ekip." />
         </Reveal>
         <div className="mt-14 grid gap-px overflow-hidden rounded-[18px] border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {WHY.map((w, i) => (
@@ -192,7 +192,7 @@ export default function HomePage() {
       {/* -------------------------------------------------------- REFERENCES */}
       <section className="container-x pt-24 sm:pt-32">
         <Reveal>
-          <SectionHead eyebrow="Referanslar" title="Türkiye'nin Laboratuvarlarında Potash" />
+          <SectionHead eyebrow="Referanslar" title="Türkiye'nin Laboratuvarlarında Nükleon Lab" />
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {Array.from({ length: 6 }).map((_, i) => (

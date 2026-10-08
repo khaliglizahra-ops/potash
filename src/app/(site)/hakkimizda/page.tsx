@@ -7,7 +7,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
-  description: "Potash, Ankara İvedik OSB'de laboratuvar cihazları üretir; kurulum, eğitim ve servisi kendi ekibiyle yapar.",
+  description: "Nükleon, Ankara İvedik OSB'de laboratuvar cihazları üretir; kurulum, eğitim ve servisi kendi ekibiyle yapar.",
   alternates: { canonical: "/hakkimizda" },
 };
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
       <section className="border-b border-line bg-[linear-gradient(180deg,#fff,#f5f6f7)]">
         <div className="container-x py-10 sm:py-14">
           <Breadcrumb items={[{ name: "Hakkımızda", href: "/hakkimizda" }]} />
-          <p className="eyebrow mt-10">Potash</p>
+          <p className="eyebrow mt-10">Nükleon Lab</p>
           <h1 className="mt-4 max-w-4xl text-[clamp(38px,6vw,84px)] font-semibold leading-[1] tracking-[-0.035em]">Laboratuvar cihazını <span className="text-red">tasarlayan</span>, üreten ve servis eden ekip.</h1>
           <p className="mt-8 max-w-2xl text-[19px] leading-relaxed text-body">
             Ankara İvedik Organize Sanayi Bölgesi’ndeki tesisimizde inkübatör, etüv, kül fırını, çeker ocak, güvenlik kabini ve su banyosu üretiyoruz. Ürün gamımızı, kendi markamız dışında seçtiğimiz markalarla tamamlıyoruz.
@@ -42,7 +42,7 @@ export default function AboutPage() {
           <Link href="/teklif-al?konu=kurulum" className="btn btn-primary mt-9">Projenizi konuşalım <ArrowRight size={16} /></Link>
         </Reveal>
         <Reveal delay={0.1} className="overflow-hidden rounded-[22px] border border-line">
-          <Image src="/img/site/gidalaboratuvari-resimJS-24.jpg" alt="Potash çeker ocak, etüv ve tezgâh sistemiyle donatılmış laboratuvar" width={1920} height={510} sizes="(min-width:1024px) 640px, 100vw" className="h-full min-h-[280px] w-full object-cover" />
+          <Image src="/img/site/gidalaboratuvari-resimJS-24.jpg" alt="Nükleon çeker ocak, etüv ve tezgâh sistemiyle donatılmış laboratuvar" width={1920} height={510} sizes="(min-width:1024px) 640px, 100vw" className="h-full min-h-[280px] w-full object-cover" />
         </Reveal>
       </section>
 

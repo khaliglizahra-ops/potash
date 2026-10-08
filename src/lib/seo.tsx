@@ -11,9 +11,9 @@ export function organizationLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Potash",
+    name: "Nükleon Lab",
     url: SITE,
-    logo: abs("/img/site/potash-logo.png"),
+    logo: abs("/img/site/nukleon-logo.jpg"),
     description: "Ankara'da üretilen laboratuvar cihazları: inkübatör, etüv, çeker ocak, güvenlik kabini ve analiz sistemleri.",
     address: {
       "@type": "PostalAddress",
@@ -46,7 +46,7 @@ export function productLd(p: Product, brandName: string, categoryName: string) {
     category: categoryName,
     image: p.images.map(abs),
     brand: { "@type": "Brand", name: brandName },
-    manufacturer: { "@type": "Organization", name: "Potash" },
+    manufacturer: { "@type": "Organization", name: "Nükleon Lab" },
     url,
     ...(p.price !== null
       ? {
@@ -58,7 +58,7 @@ export function productLd(p: Product, brandName: string, categoryName: string) {
             priceValidUntil: new Date(Date.now() + 90 * 864e5).toISOString().slice(0, 10),
             availability: p.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
             itemCondition: "https://schema.org/NewCondition",
-            seller: { "@type": "Organization", name: "Potash" },
+            seller: { "@type": "Organization", name: "Nükleon Lab" },
           },
         }
       : {}),

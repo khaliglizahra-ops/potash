@@ -4,7 +4,7 @@ export interface LegalDoc {
   sections: { h: string; p: string[] }[];
 }
 
-const SELLER = "Potash, İvedik OSB, Öz Ankara San. Sit. 1464 (675). Sokak No: 37, Yenimahalle / Ankara · info@nukleonlab.com.tr · +90 312 395 66 13";
+const SELLER = "Nükleon Lab, İvedik OSB, Öz Ankara San. Sit. 1464 (675). Sokak No: 37, Yenimahalle / Ankara · info@nukleonlab.com.tr · +90 312 395 66 13";
 
 export const LEGAL: LegalDoc[] = [
   {

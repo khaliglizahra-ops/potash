@@ -7,7 +7,7 @@ import { getBrands, getProducts } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Markalar",
-  description: "Potash'ın kendi markası ve temsil ettiğimiz laboratuvar markaları.",
+  description: "Nükleon'un kendi markası ve temsil ettiğimiz laboratuvar markaları.",
   alternates: { canonical: "/markalar" },
 };
 
@@ -17,7 +17,7 @@ export default function BrandsPage() {
     <div className="container-x py-10 sm:py-14">
       <Breadcrumb items={[{ name: "Markalar", href: "/markalar" }]} />
       <h1 className="mt-5 text-[clamp(34px,5vw,64px)] font-semibold leading-none tracking-[-0.03em]">Markalar</h1>
-      <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-body">Kendi ürettiğimiz Potash cihazlarının yanında, laboratuvarınızı tamamlayan seçilmiş markalar.</p>
+      <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-body">Kendi ürettiğimiz Nükleon cihazlarının yanında, laboratuvarınızı tamamlayan seçilmiş markalar.</p>
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {getBrands().map((b, i) => {
           const n = products.filter((p) => p.brand === b.slug).length;

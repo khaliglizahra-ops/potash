@@ -24,7 +24,7 @@ const NAV = [
 
 export function Logo({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
   return (
-    <Link href="/" aria-label="Potash – Ana sayfa" className="flex shrink-0 items-center">
+    <Link href="/" aria-label="Nükleon Lab – Ana sayfa" className="flex shrink-0 items-center">
       <LogoWordmark size={size} />
     </Link>
   );

@@ -6,13 +6,13 @@ import Faq from "@/components/ui/Faq";
 
 export const metadata: Metadata = {
   title: "Teknik Destek ve Servis",
-  description: "Potash cihazları için arıza, bakım, kalibrasyon ve yedek parça desteği. Servis talebi oluşturun veya teknik ekibimizi arayın.",
+  description: "Nükleon cihazları için arıza, bakım, kalibrasyon ve yedek parça desteği. Servis talebi oluşturun veya teknik ekibimizi arayın.",
   alternates: { canonical: "/teknik-destek" },
 };
 
 const FAQ = [
   { q: "Cihazım arızalandı, ne yapmalıyım?", a: "Cihazı kapatıp fişini çekin, model ve seri numarasını not edin ve aşağıdaki formu doldurun veya bizi arayın. Çoğu durumda telefonda yönlendirme ile çözüm bulunur; gerekirse servis ekibimiz yerinde müdahale eder." },
-  { q: "Garanti süresi ne kadar?", a: "Potash markalı cihazlarda standart garanti süresi ürün sayfasında belirtilir. Garanti, üretim ve işçilik hatalarını kapsar; yanlış kullanımdan doğan hasarlar kapsam dışıdır." },
+  { q: "Garanti süresi ne kadar?", a: "Nükleon markalı cihazlarda standart garanti süresi ürün sayfasında belirtilir. Garanti, üretim ve işçilik hatalarını kapsar; yanlış kullanımdan doğan hasarlar kapsam dışıdır." },
   { q: "Periyodik bakım yapıyor musunuz?", a: "Evet. İnkübatör, etüv, fırın, çeker ocak ve güvenlik kabinleri için yıllık bakım ve performans doğrulama hizmeti veriyoruz." },
   { q: "Yedek parçaya ne kadar sürede ulaşırım?", a: "Üretici olduğumuz için sık kullanılan parçalar atölyemizde bulunur. Stoktaki parçalar aynı gün kargolanır." },
   { q: "Başka marka cihazlara servis veriyor musunuz?", a: "Temsil ettiğimiz markalarda evet. Diğer markalar için cihazın modelini iletirseniz yapabilecek durumda olup olmadığımızı bildiririz." },

@@ -25,7 +25,7 @@ export function Summary({ cta, cardNote = false }: { cta?: React.ReactNode; card
       {t.subtotal > 0 && remain > 0 && <p className="mt-4 rounded-lg bg-white px-3.5 py-2.5 text-[13px] text-ink"><b>{formatTRY(remain)}</b> daha ekleyin, kargo ücretsiz olsun.</p>}
       {cta && <div className="mt-6">{cta}</div>}
       <ul className="mt-6 space-y-2.5 text-[13px] text-body">
-        <li className="flex items-center gap-2.5"><ShieldCheck size={16} className="text-red" /> {cardNote ? "Kart bilgileri iyzico güvenli ödeme sayfasında girilir" : "Siparişiniz Potash satış ekibince onaylanır"}</li>
+        <li className="flex items-center gap-2.5"><ShieldCheck size={16} className="text-red" /> {cardNote ? "Kart bilgileri iyzico güvenli ödeme sayfasında girilir" : "Siparişiniz Nükleon satış ekibince onaylanır"}</li>
         <li className="flex items-center gap-2.5"><Truck size={16} className="text-red" /> Kurumsal faturalı sevkiyat</li>
       </ul>
     </div>

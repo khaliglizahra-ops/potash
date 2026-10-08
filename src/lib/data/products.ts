@@ -10,7 +10,7 @@ import type { Product, TechnicalSpecifications } from "../types";
 
 const P = "/img/products/";
 const R = "/img/renders/";
-const GENERAL_CATALOG = { title: "Potash Genel Ürün Kataloğu", url: "http://katalog.nukleonlab.com.tr", kind: "katalog" as const };
+const GENERAL_CATALOG = { title: "Nükleon Genel Ürün Kataloğu", url: "http://katalog.nukleonlab.com.tr", kind: "katalog" as const };
 
 interface Family {
   description: string;
@@ -50,7 +50,7 @@ const FAMILIES: Record<string, Family> = {
   },
   hood: {
     description:
-      "Çeker ocak, zararlı buhar, gaz ve toz ile çalışırken operatörü korur. Kimyasal dayanımlı iç yüzeyler, ayarlanabilir ön cam (sash), entegre aydınlatma ve düşük gürültülü egzoz fanı ile birlikte gelir. Kurulum, kanal bağlantısı ve hava debisi ölçümü Potash mühendislerince yapılır.",
+      "Çeker ocak, zararlı buhar, gaz ve toz ile çalışırken operatörü korur. Kimyasal dayanımlı iç yüzeyler, ayarlanabilir ön cam (sash), entegre aydınlatma ve düşük gürültülü egzoz fanı ile birlikte gelir. Kurulum, kanal bağlantısı ve hava debisi ölçümü Nükleon mühendislerince yapılır.",
     highlights: ["Kimyasala dayanıklı iç yüzey ve çalışma tezgahı", "Ayarlanabilir güvenlik camı", "Entegre LED aydınlatma ve egzoz fanı", "Kurulum ve debi ölçümü dahil"],
     faq: [
       { q: "Egzoz kanalı fiyata dahil mi?", a: "Cihaz fiyatına dahil değildir. Kanal projesi ve montajı keşif sonrası ayrıca teklif edilir." },
@@ -147,7 +147,7 @@ const mk = (s: Seed): Product => {
     stock: s.stock ?? 0,
     leadTimeDays: s.lead ?? 21,
     images: s.photos,
-    model3d: s.model3d ? `/models/${s.slug}.glb` : null,
+    model3d: s.model3d === false ? null : `/models/${s.slug}.glb`,
     technicalSpecifications: { voltage: "230 V / 50 Hz", warrantyMonths: 24, ...s.spec },
     documents: [GENERAL_CATALOG],
     certificates: [],

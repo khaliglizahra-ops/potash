@@ -38,7 +38,7 @@ export const CATEGORIES: Category[] = [
 ];
 
 export const BRANDS: Brand[] = [
-  { id: "b1", slug: "nukleon", name: "Potash", country: "Türkiye", own: true, description: "Ankara İvedik OSB'deki tesisinde üretilen, Potash'ın kendi cihaz markası." },
+  { id: "b1", slug: "nukleon", name: "Nükleon", country: "Türkiye", own: true, description: "Ankara İvedik OSB'deki tesisinde üretilen, Nükleon'un kendi cihaz markası." },
   { id: "b2", slug: "rayto", name: "Rayto", country: "Çin", description: "Spektrofotometre ve klinik analiz cihazları üreticisi." },
   { id: "b3", slug: "retsch", name: "Retsch", country: "Almanya", description: "Eleme, öğütme ve numune hazırlama cihazları." },
   { id: "b4", slug: "hanna", name: "Hanna", country: "Romanya", description: "pH, iletkenlik ve sıcaklık ölçüm cihazları." },

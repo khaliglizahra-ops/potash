@@ -7,10 +7,10 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin",
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: { default: "Potash | Laboratuvar Teknolojisinde Yeni Nesil Çözümler", template: "%s | Potash" },
+  title: { default: "Nükleon Lab | Laboratuvar Teknolojisinde Yeni Nesil Çözümler", template: "%s | Nükleon Lab" },
   description:
     "Yerli üretim laboratuvar cihazları: inkübatör, etüv, çeker ocak, güvenlik kabini, su banyosu ve daha fazlası. 360° 3D ürün inceleme, teknik uzmanlık ve satış sonrası destek.",
-  openGraph: { type: "website", locale: "tr_TR", siteName: "Potash" },
+  openGraph: { type: "website", locale: "tr_TR", siteName: "Nükleon Lab" },
 };
 
 export const viewport: Viewport = { themeColor: "#ffffff", width: "device-width", initialScale: 1 };

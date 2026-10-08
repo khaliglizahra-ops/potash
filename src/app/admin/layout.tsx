@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AdminNav from "@/components/admin/AdminNav";
 import { isAdmin } from "@/lib/server/auth";
 
-export const metadata: Metadata = { title: { default: "Yönetim", template: "%s | Potash Yönetim" }, robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: { default: "Yönetim", template: "%s | Nükleon Yönetim" }, robots: { index: false, follow: false } };
 export const dynamic = "force-dynamic";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
