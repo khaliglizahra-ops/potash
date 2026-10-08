@@ -8,7 +8,7 @@ const KEY = "nk-splash-seen";
 const TOTAL_MS = 2600; // keep in sync with the CSS timeline in globals.css (.splash)
 
 /**
- * Home-page loading screen: logo + progress line, then the whole screen scrolls up and away.
+ * Home-page loading screen: the Nükleon atom symbol, its orbits spinning around the nucleus, then the whole screen scrolls up and away.
  * Pure CSS timeline (so it can never get stuck if JS is slow), shown once per browser session.
  */
 export default function Splash() {
@@ -43,10 +43,10 @@ export default function Splash() {
       {/* runs before first paint on repeat visits so the splash never flashes */}
       <script dangerouslySetInnerHTML={{ __html: `try{if(sessionStorage.getItem("${KEY}")==="1")document.documentElement.setAttribute("data-splash","seen")}catch(e){}` }} />
       <div className="splash" aria-hidden="true">
-        <div className="splash-inner">
-          <Image src="/img/site/nukleon-logo.png" alt="" width={908} height={302} priority className="splash-logo" />
-          <p className="splash-tag">Laboratuvar teknolojisinde yeni nesil çözümler</p>
-          <div className="splash-bar"><span /></div>
+        <div className="splash-atom">
+          <div className="splash-glow" />
+          <Image src="/img/site/atom-orbits.png" alt="" width={380} height={380} priority className="splash-orbits" />
+          <Image src="/img/site/atom-nucleus.png" alt="" width={96} height={96} priority className="splash-nucleus" />
         </div>
         <div className="splash-edge" />
       </div>
