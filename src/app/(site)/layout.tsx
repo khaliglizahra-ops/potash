@@ -2,6 +2,7 @@ import { connection } from "next/server";
 import { getCategories, getProducts } from "@/lib/catalog";
 import { DEMO } from "@/lib/demo";
 import DemoBanner from "@/components/layout/DemoBanner";
+import Splash from "@/components/layout/Splash";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SearchOverlay from "@/components/layout/SearchOverlay";
@@ -26,6 +27,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
   }));
   return (
     <>
+      <Splash />
       <Rehydrate />
       <a href="#icerik" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-white">
         İçeriğe geç

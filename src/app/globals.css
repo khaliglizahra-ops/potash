@@ -164,3 +164,50 @@ textarea.field { height: auto; padding-block: 12px; }
 }
 
 body.lock-scroll { overflow: hidden; }
+
+/* ---- home-page splash (timeline: logo in 0.1s → bar fills to 1.7s → curtain scrolls up 1.8s–2.6s) ---- */
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  animation: splash-out 0.85s cubic-bezier(0.76, 0, 0.24, 1) 1.8s forwards;
+  will-change: transform;
+}
+.splash::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.5;
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 50%, #000, transparent 75%);
+}
+.splash-inner { position: relative; display: grid; justify-items: center; gap: 22px; padding: 24px; }
+.splash-logo {
+  width: min(72vw, 440px);
+  height: auto;
+  animation: splash-logo 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+.splash-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-align: center;
+  animation: splash-fade 0.7s ease 0.5s both;
+}
+.splash-bar { width: min(52vw, 260px); height: 2px; background: var(--gray-200); border-radius: 2px; overflow: hidden; animation: splash-fade 0.5s ease 0.3s both; }
+.splash-bar span { display: block; height: 100%; width: 100%; background: var(--red); transform-origin: left; animation: splash-fill 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.3s both; }
+.splash-edge { position: absolute; inset-inline: 0; bottom: 0; height: 6px; background: var(--red); }
+
+@keyframes splash-logo { from { opacity: 0; transform: translateY(18px) scale(0.96); } to { opacity: 1; transform: none; } }
+@keyframes splash-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes splash-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes splash-out { to { transform: translateY(-100%); visibility: hidden; } }
+
+html[data-splash="seen"] .splash { display: none; }
+@media (prefers-reduced-motion: reduce) { .splash { display: none; } }
