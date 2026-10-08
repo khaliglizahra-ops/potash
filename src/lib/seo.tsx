@@ -13,7 +13,7 @@ export function organizationLd() {
     "@type": "Organization",
     name: "Nükleon Lab",
     url: SITE,
-    logo: abs("/img/site/nukleon-logo.jpg"),
+    logo: abs("/img/site/nukleon-logo.png"),
     description: "Ankara'da üretilen laboratuvar cihazları: inkübatör, etüv, çeker ocak, güvenlik kabini ve analiz sistemleri.",
     address: {
       "@type": "PostalAddress",
