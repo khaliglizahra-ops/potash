@@ -45,7 +45,7 @@ export default function ProductTabs({ product }: { product: Product }) {
 
   return (
     <section aria-label="Ürün bilgileri" className="mt-20">
-      <div ref={bar} role="tablist" className="no-scrollbar sticky top-[68px] z-20 -mx-4 flex gap-1 overflow-x-auto border-b border-line bg-white/95 px-4 backdrop-blur lg:top-[76px] lg:mx-0 lg:px-0">
+      <div ref={bar} role="tablist" className="no-scrollbar sticky top-[68px] z-20 -mx-4 flex gap-1 overflow-x-auto border-b border-line bg-white/95 px-4 backdrop-blur lg:top-[84px] lg:mx-0 lg:px-0">
         {TABS.map((t) => (
           <button
             key={t.id}

@@ -94,7 +94,7 @@ export default function Header({ categories }: { categories: MenuCategory[] }) {
         className={`sticky top-0 z-50 border-b bg-white/92 backdrop-blur-xl transition-shadow duration-300 ${scrolled ? "border-line shadow-[0_8px_30px_-18px_rgba(23,23,23,0.35)]" : "border-transparent"}`}
         onMouseLeave={closeMega}
       >
-        <div className="container-x flex h-[68px] items-center gap-4 lg:h-[76px] lg:gap-10">
+        <div className="container-x flex h-[68px] items-center gap-4 lg:h-[84px] lg:gap-10">
           <button className={`${iconBtn} -ml-2 lg:hidden`} aria-label="Menüyü aç" onClick={() => setMenu(true)}>
             <Menu size={22} />
           </button>
