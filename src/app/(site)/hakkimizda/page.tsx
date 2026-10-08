@@ -34,6 +34,12 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="container-x pt-12">
+        <Reveal className="overflow-hidden rounded-[22px] border border-line">
+          <Image src="/img/site/lab-hero.jpg" alt="Nükleon cihazlarıyla donatılmış modern laboratuvar" width={1280} height={720} priority sizes="(min-width:1440px) 1344px, 100vw" className="h-[320px] w-full object-cover object-[35%_50%] sm:h-[480px] lg:h-[560px]" />
+        </Reveal>
+      </section>
+
       <section className="container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <h2 className="section-title">Cihazdan öte: bütün laboratuvar.</h2>

@@ -127,6 +127,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ---------------------------------------------------- BRAND STORY BAND */}
+      <section className="container-x pt-24 sm:pt-32">
+        <Reveal className="group relative overflow-hidden rounded-[22px] border border-line bg-white">
+          <Image
+            src="/img/site/lab-hero.jpg"
+            alt="Nükleon cihazlarıyla donatılmış modern bir laboratuvarda mikroskopla çalışan bilim insanı"
+            width={1280}
+            height={720}
+            sizes="(min-width:1440px) 1344px, 100vw"
+            className="aspect-[4/3] w-full object-cover object-[30%_50%] transition-transform duration-[1600ms] ease-[var(--ease)] group-hover:scale-[1.02] sm:aspect-[16/9] lg:aspect-[2/1]"
+          />
+          <div className="p-6 sm:absolute sm:bottom-8 sm:right-8 sm:w-[min(46%,480px)] sm:rounded-[18px] sm:bg-white/95 sm:p-9 sm:shadow-[var(--shadow-lift)] sm:backdrop-blur-md lg:bottom-10 lg:right-10">
+            <p className="eyebrow">Marka hikâyesi</p>
+            <h2 className="mt-4 text-[clamp(26px,3.2vw,42px)] font-semibold leading-[1.06] tracking-tight">Bilimin gücünü laboratuvarlarınıza taşıyoruz.</h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-body">
+              Nükleon, bilimin dönüştürücü gücünden ilham alarak laboratuvarlar için güvenilir, yenilikçi ve yüksek kaliteli cihazlar geliştiren bir teknoloji markasıdır.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/hakkimizda" className="btn btn-primary">Bizi tanıyın <ArrowRight size={16} /></Link>
+              <Link href="/cozumler" className="btn btn-ghost">Çözümler</Link>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       {/* -------------------------------------------------------- 3D BAND */}
       <section className="mt-24 bg-gray-50 py-20 sm:mt-32 sm:py-28">
         <div className="container-x grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">

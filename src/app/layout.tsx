@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: { default: "Nükleon Lab | Laboratuvar Teknolojisinde Yeni Nesil Çözümler", template: "%s | Nükleon Lab" },
   description:
     "Yerli üretim laboratuvar cihazları: inkübatör, etüv, çeker ocak, güvenlik kabini, su banyosu ve daha fazlası. 360° 3D ürün inceleme, teknik uzmanlık ve satış sonrası destek.",
-  openGraph: { type: "website", locale: "tr_TR", siteName: "Nükleon Lab" },
+  openGraph: { type: "website", locale: "tr_TR", siteName: "Nükleon Lab", images: [{ url: "/img/site/lab-hero.jpg", width: 1280, height: 720, alt: "Nükleon Lab" }] },
 };
 
 export const viewport: Viewport = { themeColor: "#ffffff", width: "device-width", initialScale: 1 };
